@@ -1,0 +1,2 @@
+apache-airflows-providers-mongo
+pymongo=4.0.1
