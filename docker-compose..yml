@@ -1,7 +1,7 @@
 version: '3'
 services:
   airflow-news07:
-    image: afnewsprocess:latest
+    image: airflow-news07:latest
     volumes:
       - ./airflow:/opt/airflow
     environment:
