@@ -2,9 +2,11 @@ version: '3'
 
 services:
   airflow-news07:
-    image: airflow-news07:latest
+    image: afnewsprocess:latest
     volumes:
       - ./airflow:/opt/airflow
+    environment:
+      - PYTHONPATH=/opt/airflow
     ports:
       - "8080:8080"
     command: airflow standalone
